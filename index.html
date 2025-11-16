@@ -9,17 +9,14 @@
     <title>chuouden</title>
     <meta name="description" content="令和伝縁礼咲〜桜と共に未来へ紡ぐ〜" />
 
-    <!-- <link rel="icon" href="./img/favicon.png" type="image/png" /> -->
-
     <!-- css読み込み -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./style.css" />
 
-    <!-- JavaScript読み込み -->
-
+    <!-- 画像のプリロード -->
     <link
       rel="preload"
-      href="./assets/img/fv.webp"
+      href="./assets/img/bg1-text.webp"
       as="image"
       type="image/webp"
     />
@@ -37,6 +34,7 @@
         <img
           src="./assets/img/bg3.webp"
           alt="共に演舞で地元水沢を盛り上げる仲間を募集"
+          loading="lazy"
         />
       </div>
       <div class="p-contact">
@@ -93,6 +91,7 @@
   .p-main {
     position: relative;
     padding-bottom: 70px;
+    background-color: #201b3b;
   }
   .fv-img {
     width: 100%;
