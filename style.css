@@ -70,3 +70,120 @@ select {
   margin-inline: auto;
   background-color: #eee;
 }
+
+.l-main {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.p-main {
+  position: relative;
+  background-color: #201b3b;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-main {
+    padding-bottom: 70px;
+  }
+}
+
+.fv-img {
+  width: 100%;
+}
+.fv-img img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.p-contact {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.p-contact-buttons {
+  max-width: 600px;
+  width: 100%;
+  padding-inline: clamp(4.4444444444px, 1.3888888889vw, 26.6666666667px);
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  height: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-contact-buttons {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-contact-buttons {
+    height: 70px;
+  }
+}
+
+.p-contact-button {
+  width: 75px;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-contact-button {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-contact-button {
+    width: 50px;
+  }
+}
+.p-contact-button svg {
+  width: 70%;
+  aspect-ratio: 1/1;
+  fill: #333;
+}
+@media (hover: hover) {
+  .p-contact-button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.7;
+    background-color: #333;
+  }
+  .p-contact-button:hover svg {
+    fill: #ddd;
+  }
+}
